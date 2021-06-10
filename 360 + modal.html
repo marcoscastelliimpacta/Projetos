@@ -1,0 +1,42 @@
+
+<style>
+.modal-issue {display: none; position: absolute; z-index: 999999; left: 0px; top: 0px; width: 100%; height: 200%; overflow: auto; background-color: rgba(0,0,0,0.5);
+}
+.close {color: #000; background-color:white; line-height:30px; font-size: 50px; font-weight: bold; z-index:999999; position:absolute; right:20px; border:0px; top:10px
+}
+.close:hover, .close:focus { color: #ffffff; text-decoration: none; cursor: pointer; transition: all 200ms ease-in;
+}
+</style>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+<a href="javascript:Void(0)" id="modal-button">ABRE MODAL</a>
+
+<div id="modal-win" class="modal-issue">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close">&times;</span>
+		</div>
+		<div class="modal-body">
+			<iframe class="airtable-embed" src="https://h5.veer.tv/photo-player?pid=136812" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; "></iframe>
+		</div>
+	</div>
+</div>
+
+  
+<script id="rendered-js" >
+  var modal = document.getElementById('modal-win');
+  var lk = document.getElementById("modal-button");
+  var close = document.getElementsByClassName("close")[0];
+  lk.onclick = function () {
+    modal.style.display = "block";
+ };
+ close.onclick = function () {
+   modal.style.display = "none";
+ };
+</script>
+
+
